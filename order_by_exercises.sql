@@ -4,7 +4,7 @@ USE employees;
 SELECT * FROM employees WHERE first_name IN('Irena', 'Vidya', 'Maya')
 ORDER BY last_name, first_name  DESC;
 
--- SELECT * FROM employees WHERE first_name = 'Irene' OR first_name= 'Vidya' OR first_name = 'Maya';
+-- SELECT * FROM employees WHERE first_name = 'Irena' OR first_name= 'Vidya' OR first_name = 'Maya';
 # SELECT first_name, last_name
 # FROM employees
 # ORDER BY first_name ASC;

@@ -23,13 +23,20 @@ WHERE year(birth_date) BETWEEN 1900 AND CURDATE()
   AND month(birth_date) = 12
   AND day(birth_date) = 25;
 
-SELECT *
+SELECT DATEDIFF(now(),'1990-01-01')
 FROM employees
 WHERE year(hire_date) BETWEEN 1990 AND 1999
   AND month(birth_date) = 12
   AND day(birth_date) = 25
 AND year(hire_date) BETWEEN 1990 AND 1999
 ORDER BY hire_date DESC;
+
+# SELECT *
+# FROM employees
+# WHERE year(hire_date) BETWEEN 1990 AND 1999
+#   AND month(birth_date) = 12
+#   AND day(birth_date) = 25
+#
 
 -- SELECT * FROM employees WHERE last_name LIKE ('%q%');
 --
